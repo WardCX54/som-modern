@@ -5,36 +5,185 @@
 html, body {
     padding: 0 !important;
     margin: 0 !important;
+    font-family: 'Open Sans', sans-serif !important;
+    color: $gray;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif !important;
+}
+h3 {
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 8px;
+    position: relative;
+    margin-bottom: 50px;
+  }
+h3:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 4px solid white;
+}
+h4{
+    color: $primary !important;
+    font-size: 2rem !important;
+    margin-top: 20px !important;
+}
+h5 {
+    color: $gray;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 1rem !important;
 }
 
-
+header {
+    ul {
+        display: inline-block;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+    li {
+        display: inline-block;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+}
 .header-image {
-    height: 80px;
+    height: 50px;
     width: auto;
 }
 
 .super-nav {
     background: $primary;
-    height: 30px;
+    display: block;
+    text-align: right;
+    height: 50px;
     width: 100%;
     padding: 0;
+    input[type=search] {
+        height: 32px;
+        width: 200px;
+        background: $primary-700;
+        border: 1px solid white;
+        color: white;
+        padding: 0 10px;
+    }
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: white;
+      }
+      ::-moz-placeholder { /* Firefox 19+ */
+        color: white;
+      }
+      :-ms-input-placeholder { /* IE 10+ */
+        color: white;
+      }
+      :-moz-placeholder { /* Firefox 18- */
+        color: white;
+      }
+    button {
+        margin: 0 20px 0 10px;
+        height: 32px;
+        width: auto;
+        color: $white;
+        font-weight: bold;
+        background: $primary;
+        border: 1px solid white;
+        &:hover {
+            background: $primary-700;
+            cursor: pointer;
+        }
+
+    }
     a {
         color: white;
+        padding: 12px 20px !important;
+        &:hover {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+    ul {
+        display: inline-block;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+    li {
+        display: inline-block;
+        padding: 0px !important;
+        margin: 0px !important;
     }
 }
 
-.main-nav {
-    background: white;
-    height: 50px;
+.super-nav-brand {
+    height: 30px;
     width: auto;
 }
- 
+
+.brand-section {
+    display: flex;
+    float: left;
+}
+
+.main-nav {
+    display: block;
+    height: 70px;
+    width: auto;
+    text-align: right;
+    margin: 0;
+
+    a {
+        color: $primary;
+        padding: 18px 20px !important;
+        font-size: 1.25em;
+        font-weight: bold;
+        &:hover {
+            color: $primary;
+            text-decoration: underline;
+        }
+    }
+    ul {
+        display: inline-block;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+    li {
+        display: inline-block;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+}
 
 html, body {
     padding: 0;
     margin: 0;
 }
 
-.navbar-expand-lg {
-    padding: 0 !important;
+.navbar-brand {
+    padding: 20px !important;
+    margin: 0 !important;
+}
+
+.hero-container {
+    background-image: url(assets/images/grand-portal-point.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+.section-primary {
+    background: $primary;
+    color: white;
+}
+.content-container {
+    height: auto;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+    p {
+        margin-top: 20px;
+    }
 }
